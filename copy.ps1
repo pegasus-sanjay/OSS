@@ -1,10 +1,4 @@
 
-if ((Get-PSSnapin "Microsoft.SharePoint.PowerShell" -ErrorAction SilentlyContinue) -eq $null) 
-{
-    Add-PSSnapin "Microsoft.SharePoint.PowerShell"
-}
-
-
 Param(
  [string]$directory = $env:BUILD_SOURCESDIRECTORY
  #This is to create a variable that picks the environment variable for the working directory for the build agent
