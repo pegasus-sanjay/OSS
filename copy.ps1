@@ -1,3 +1,5 @@
+Add-PSSnapin Microsoft.Sharepoint.Powershell
+
 Param(
  [string]$directory = $env:BUILD_SOURCESDIRECTORY
  #This is to create a variable that picks the environment variable for the working directory for the build agent
