@@ -1,4 +1,9 @@
-Add-PSSnapin Microsoft.Sharepoint.Powershell
+Set-ExecutionPolicy Unrestricted
+if ((Get-PSSnapin "Microsoft.SharePoint.PowerShell" -ErrorAction SilentlyContinue) -eq $null) 
+{
+    Add-PSSnapin "Microsoft.SharePoint.PowerShell"
+}
+
 
 Param(
  [string]$directory = $env:BUILD_SOURCESDIRECTORY
